@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   void initState() {
-   // checkVersion();
+    checkVersion();
     super.initState();
   }
 
@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
     print(
         "App Name : ${appName}, App Package Name: ${packageName},App Version: ${version}, App build Number: ${buildNumber}");
 
-    if ("1.0.1".contains(version)) {
+    if ("1.0.4".contains(version)) {
       showAlertDialog(context);
     }
   }
