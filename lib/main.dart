@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
     print(
         "App Name : ${appName}, App Package Name: ${packageName},App Version: ${version}, App build Number: ${buildNumber}");
 
-    if ("1.0.4".contains(version)) {
+    if ("1.0.5".contains(version)) {
       showAlertDialog(context);
     }
   }
