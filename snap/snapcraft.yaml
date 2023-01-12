@@ -14,7 +14,7 @@ assumes: [kernel-assets]
 
 architectures:
   - build-on: amd64
-    run-on: all
+    run-on: amd64
 
 
 apps:
