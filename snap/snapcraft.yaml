@@ -13,8 +13,8 @@ confinement: strict # use 'strict' once you have the right plugs and slots
 assumes: [kernel-assets]
 
 architectures:
-  - build-on: amd64
-    run-on: amd64
+  - build-on: [amd64, arm64]
+    run-on: [amd64, arm64]
 
 
 apps:
