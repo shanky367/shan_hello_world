@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:package_info_plus/package_info_plus.dart';
-//import 'package:url_launcher/url_launcher.dart';
+import 'package:package_info_plus/package_info_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'dart:async';
 
 void main() async {
@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
    // checkVersion();
     super.initState();
   }
-/*
+
   void checkVersion() async {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     String appName = packageInfo.appName;
@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
       },
     );
   }
- */
+
 
   @override
   Widget build(BuildContext context) {
@@ -158,8 +158,8 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        //onPressed: () {launchAnotherApp();},
-         onPressed: _incrementCounter,
+        onPressed: () {launchAnotherApp();},
+        // onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
